@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saketh Sakilam - Data Science and Analytics Portfolio" />
+  <title>Saketh Sakilam | Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --background: #f7f8fc;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #667085;
+      --primary: #3157d5;
+      --primary-dark: #243fa3;
+      --border: #e4e7ec;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .hero {
+      min-height: 78vh;
+      padding: 0 8%;
+      background:
+        radial-gradient(circle at top right, rgba(49, 87, 213, 0.22), transparent 35%),
+        linear-gradient(135deg, #101828, #1d2939);
+      color: white;
+    }
+
+    nav {
+      max-width: 1120px;
+      margin: auto;
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--primary);
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: #e4e7ec;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+      padding: 100px 0 120px;
+    }
+
+    .eyebrow {
+      color: #8ea7ff;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 5.8rem);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .intro {
+      max-width: 760px;
+      color: #d0d5dd;
+      font-size: 1.18rem;
+      margin-bottom: 34px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 10px;
+      color: white;
+      background: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: var(--primary-dark);
+    }
+
+    .section {
+      max-width: 1120px;
+      margin: auto;
+      padding: 90px 8%;
+    }
+
+    .alternate {
+      max-width: none;
+      background: #eef2ff;
+    }
+
+    .inner {
+      max-width: 1120px;
+      margin: auto;
+    }
+
+    .section-heading {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 2.3rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .card,
+    .timeline-item {
+      background: var(--surface);
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(16, 24, 40, 0.06);
+    }
+
+    .card h3,
+    .timeline-item h3 {
+      margin: 8px 0;
+      font-size: 1.25rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 22px;
+    }
+
+    .timeline-item h4 {
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .date {
+      color: var(--primary);
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    .muted,
+    .tech {
+      color: var(--muted);
+    }
+
+    .tech {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      padding: 30px 8%;
+      text-align: center;
+      background: #101828;
+      color: #d0d5dd;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        padding: 0 6%;
+      }
+
+      .nav-links {
+        gap: 14px;
+        font-size: 0.85rem;
+      }
+
+      .hero-content {
+        padding: 80px 0 100px;
+      }
+
+      .section {
+        padding: 70px 6%;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <nav>
+      <a class="logo" href="#home">SS</a>
+      <div class="nav-links">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </nav>
+
+    <section id="home" class="hero-content">
+      <p class="eyebrow">Data Science • Analytics • Machine Learning</p>
+      <h1>Saketh Sakilam</h1>
+      <p class="intro">
+        Master’s student in Data Science at the University of Maryland with
+        experience in data analytics, business intelligence, machine learning,
+        SQL, Python, Snowflake, and cloud technologies.
+      </p>
+      <a class="button" href="#projects">View My Projects</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="education" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Background</p>
+        <h2>Education</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <span class="date">2024 – 2026</span>
+          <h3>University of Maryland, College Park</h3>
+          <p>Master of Science in Data Science</p>
+          <p class="muted">GPA: 4.0 / 4.0</p>
+        </article>
+
+        <article class="card">
+          <span class="date">2020 – 2024</span>
+          <h3>Mahatma Gandhi Institute of Technology</h3>
+          <p>Bachelor of Technology in Computer Science and Engineering</p>
+          <p class="muted">GPA: 8.0 / 10</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section alternate">
+      <div class="inner">
+        <div class="section-heading">
+          <p class="eyebrow">Professional Work</p>
+          <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="date">Sep 2023 – Feb 2024</span>
+            <h3>Data Analyst Intern</h3>
+            <h4>Inspira Enterprise India Ltd</h4>
+            <p>
+              Used SQL, Python, Power BI, and Tableau to clean and analyze data,
+              develop KPI dashboards, automate recurring reports, and support a
+              telecom customer churn analysis initiative.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="date">May 2023 – Aug 2023</span>
+            <h3>Data Analyst Intern</h3>
+            <h4>Capgemini Technology Services India Ltd</h4>
+            <p>
+              Performed SQL and Excel analysis, prepared data for internal
+              modeling, and created Power BI dashboards to communicate business
+              performance and operational trends.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>NASA Web Log Analytics</h3>
+          <p class="tech">Python • SQL • Snowflake</p>
+          <p>
+            Built a Snowflake analytics pipeline to process more than 3.4
+            million NASA web server log records and analyze traffic patterns,
+            user behavior, requested resources, and HTTP status trends.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Controllable Face Generation</h3>
+          <p class="tech">PyTorch • Conditional GAN • Streamlit</p>
+          <p>
+            Developed a Conditional GAN using the CelebA dataset to generate
+            facial images with controllable smile attributes while preserving
+            key identity characteristics.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>NLP Subtext Detection</h3>
+          <p class="tech">RoBERTa • Hugging Face • PyTorch</p>
+          <p>
+            Fine-tuned a RoBERTa model to identify implied meaning and subtext
+            in natural-language statements and deployed an interactive
+            inference interface.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Zoom Minutes Generator</h3>
+          <p class="tech">AWS Lambda • S3 • Bedrock • Transcribe</p>
+          <p>
+            Created a cloud workflow that transcribes meeting recordings,
+            generates structured meeting minutes using generative AI, and
+            emails the results automatically.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Saketh Sakilam and deployed using GitHub Actions.</p>
+  </footer>
+</body>
+</html>
